@@ -1,0 +1,107 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sat Dec 26 21:47:26 2020
+| Host         : LAPTOP-ASJTO7UA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Basys3_control_sets_placed.rpt
+| Design       : Basys3
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    43 |
+| Unused register locations in slices containing registers |    46 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              56 |           43 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             138 |           60 |
+| Yes          | No                    | No                     |             992 |          450 |
+| Yes          | No                    | Yes                    |              39 |           17 |
+| Yes          | Yes                   | No                     |              41 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+-------------------------------------+--------------------+------------------+----------------+
+|            Clock Signal           |            Enable Signal            |  Set/Reset Signal  | Slice Load Count | Bel Load Count |
++-----------------------------------+-------------------------------------+--------------------+------------------+----------------+
+|  mcpu/ir/dataout_reg[31]_1[0]     |                                     |                    |                1 |              3 |
+|  mcpu/cu/nextstate_reg[2]_i_2_n_1 |                                     |                    |                2 |              3 |
+|  store_reg[3]_i_2_n_1             |                                     |                    |                1 |              4 |
+|  mcpu/cu/E[0]                     |                                     |                    |                2 |              5 |
+|  CLK_IBUF_BUFG                    | FSM_onehot_AN[4]_i_1_n_1            | mcpu/pc/SR[0]      |                2 |              5 |
+|  mcpu/cu/regfile_reg[16][27]_0    |                                     |                    |                5 |              9 |
+|  CLK_IBUF_BUFG                    |                                     | mcpu/pc/SR[0]      |                7 |             19 |
+|  CLK_IBUF_BUFG                    |                                     | reb/cnt[0]_i_1_n_1 |                5 |             20 |
+|  n_0_2075_BUFG                    |                                     |                    |               32 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[9][31]_i_1_n_1  |                    |               17 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[6][31]_i_1_n_1  |                    |               19 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[29][31]_i_1_n_1 |                    |               13 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[28][31]_i_1_n_1 |                    |               13 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[10][31]_i_1_n_1 |                    |               15 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[12][31]_i_1_n_1 |                    |               17 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[11][31]_i_1_n_1 |                    |               14 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[14][31]_i_1_n_1 |                    |               17 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[13][31]_i_1_n_1 |                    |               14 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[15][31]_i_1_n_1 |                    |               14 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[16][31]_i_1_n_1 |                    |               10 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[17][31]_i_1_n_1 |                    |               14 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[18][31]_i_1_n_1 |                    |               17 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[19][31]_i_1_n_1 |                    |               13 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[1][31]_i_1_n_1  |                    |               12 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[21][31]_i_1_n_1 |                    |               14 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[20][31]_i_1_n_1 |                    |               13 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[23][31]_i_1_n_1 |                    |               18 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[22][31]_i_1_n_1 |                    |               14 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[24][31]_i_1_n_1 |                    |               12 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[26][31]_i_1_n_1 |                    |               12 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[25][31]_i_1_n_1 |                    |               13 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[27][31]_i_1_n_1 |                    |               13 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[30][31]_i_1_n_1 |                    |               15 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[3][31]_i_1_n_1  |                    |               15 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[31][31]_i_1_n_1 |                    |               14 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[4][31]_i_1_n_1  |                    |               16 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[2][31]_i_1_n_1  |                    |               13 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[5][31]_i_1_n_1  |                    |               15 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[8][31]_i_1_n_1  |                    |               13 |             32 |
+| ~myclk_BUFG                       | mcpu/rgfile/regfile[7][31]_i_1_n_1  |                    |               21 |             32 |
+|  myclk_BUFG                       | mcpu/cu/instcode_reg[31]_0          | mcpu/pc/SR[0]      |                9 |             36 |
+|  myclk_BUFG                       | mcpu/cu/curpc_reg[0][0]             | mcpu/pc/SR[0]      |               17 |             39 |
+|  myclk_BUFG                       |                                     | mcpu/pc/SR[0]      |               48 |             99 |
++-----------------------------------+-------------------------------------+--------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 3      |                     2 |
+| 4      |                     1 |
+| 5      |                     2 |
+| 9      |                     1 |
+| 16+    |                    37 |
++--------+-----------------------+
+
+

@@ -1,0 +1,816 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Dec 26 21:44:54 2020
+# Process ID: 25060
+# Current directory: D:/Vivado project/19335016__/MutiCpu/MutiCpu.runs/synth_1
+# Command line: vivado.exe -log Basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Basys3.tcl
+# Log file: D:/Vivado project/19335016__/MutiCpu/MutiCpu.runs/synth_1/Basys3.vds
+# Journal file: D:/Vivado project/19335016__/MutiCpu/MutiCpu.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Basys3.tcl -notrace
+Command: synth_design -top Basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17652 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 387.566 ; gain = 97.684
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Basys3' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:1]
+	Parameter T1MS bound to: 50000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'multicpu' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/multicpu.v:23]
+INFO: [Synth 8-638] synthesizing module 'control' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/control.v:23]
+	Parameter _add bound to: 3'b000 
+	Parameter _sub bound to: 3'b001 
+	Parameter _sltu bound to: 3'b010 
+	Parameter _slt bound to: 3'b011 
+	Parameter _sll bound to: 3'b100 
+	Parameter _or bound to: 3'b101 
+	Parameter _and bound to: 3'b110 
+	Parameter _xor bound to: 3'b111 
+	Parameter sif bound to: 3'b000 
+	Parameter sid bound to: 3'b001 
+	Parameter sexe bound to: 3'b010 
+	Parameter smem bound to: 3'b011 
+	Parameter swb bound to: 3'b100 
+	Parameter inistate bound to: 3'b111 
+	Parameter sadd bound to: 6'b000000 
+	Parameter ssub bound to: 6'b000001 
+	Parameter sor bound to: 6'b100000 
+	Parameter sxori bound to: 6'b010011 
+	Parameter ssll bound to: 6'b011000 
+	Parameter sand bound to: 6'b010000 
+	Parameter saddiu bound to: 6'b000010 
+	Parameter sori bound to: 6'b010010 
+	Parameter sbne bound to: 6'b110101 
+	Parameter sslt bound to: 6'b100111 
+	Parameter sslti bound to: 6'b100110 
+	Parameter sbeq bound to: 6'b110100 
+	Parameter ssw bound to: 6'b110000 
+	Parameter slw bound to: 6'b110001 
+	Parameter sbltz bound to: 6'b110110 
+	Parameter sandi bound to: 6'b010001 
+	Parameter sj bound to: 6'b111000 
+	Parameter sjr bound to: 6'b111001 
+	Parameter sjal bound to: 6'b111010 
+	Parameter shalt bound to: 6'b111111 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/control.v:112]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/control.v:250]
+INFO: [Synth 8-256] done synthesizing module 'control' (1#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/control.v:23]
+INFO: [Synth 8-638] synthesizing module 'pcadd' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/pcadd.v:23]
+INFO: [Synth 8-256] done synthesizing module 'pcadd' (2#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/pcadd.v:23]
+INFO: [Synth 8-638] synthesizing module 'pc' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-256] done synthesizing module 'pc' (3#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-638] synthesizing module 'insmem' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/insmem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/86158/Desktop/try.txt' is read successfully [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/insmem.v:31]
+INFO: [Synth 8-256] done synthesizing module 'insmem' (4#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/insmem.v:23]
+INFO: [Synth 8-638] synthesizing module 'IR' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-256] done synthesizing module 'IR' (5#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-638] synthesizing module 'cut' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/cut.v:23]
+INFO: [Synth 8-256] done synthesizing module 'cut' (6#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/cut.v:23]
+INFO: [Synth 8-638] synthesizing module 'signzeroextend' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/signzeroextend.v:23]
+INFO: [Synth 8-256] done synthesizing module 'signzeroextend' (7#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/signzeroextend.v:23]
+INFO: [Synth 8-638] synthesizing module 'registerfile' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/registerfile.v:23]
+WARNING: [Synth 8-567] referenced signal 'regfile' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/registerfile.v:52]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/registerfile.v:57]
+INFO: [Synth 8-256] done synthesizing module 'registerfile' (8#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/registerfile.v:23]
+INFO: [Synth 8-638] synthesizing module 'toreg' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/toreg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'toreg' (9#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/toreg.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/ALU.v:23]
+	Parameter _add bound to: 3'b000 
+	Parameter _sub bound to: 3'b001 
+	Parameter _sltu bound to: 3'b010 
+	Parameter _slt bound to: 3'b011 
+	Parameter _sll bound to: 3'b100 
+	Parameter _or bound to: 3'b101 
+	Parameter _and bound to: 3'b110 
+	Parameter _xor bound to: 3'b111 
+WARNING: [Synth 8-567] referenced signal 'sa' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/ALU.v:57]
+WARNING: [Synth 8-567] referenced signal 'extimm' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/ALU.v:57]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (10#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'datamem' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:23]
+WARNING: [Synth 8-567] referenced signal 'datamemory' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:45]
+WARNING: [Synth 8-567] referenced signal 'dataB' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:45]
+WARNING: [Synth 8-567] referenced signal 'dataB' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:55]
+INFO: [Synth 8-256] done synthesizing module 'datamem' (11#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:23]
+INFO: [Synth 8-256] done synthesizing module 'multicpu' (12#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/multicpu.v:23]
+INFO: [Synth 8-638] synthesizing module 'rebounce' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/rebounce.v:2]
+	Parameter jitter bound to: 20'b00101011111100100000 
+INFO: [Synth 8-256] done synthesizing module 'rebounce' (13#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/rebounce.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:65]
+INFO: [Synth 8-638] synthesizing module 'SegLED' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/SegLED.v:2]
+INFO: [Synth 8-226] default block is never used [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/SegLED.v:12]
+INFO: [Synth 8-256] done synthesizing module 'SegLED' (14#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/SegLED.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:89]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:94]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:98]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:87]
+WARNING: [Synth 8-567] referenced signal 'AN' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+WARNING: [Synth 8-567] referenced signal 'SW' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+WARNING: [Synth 8-567] referenced signal 'newAddress' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+WARNING: [Synth 8-567] referenced signal 'rsout' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+WARNING: [Synth 8-567] referenced signal 'rtout' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+WARNING: [Synth 8-567] referenced signal 'writedata' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+WARNING: [Synth 8-567] referenced signal 'nextstate' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+WARNING: [Synth 8-567] referenced signal 'nowpc' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+WARNING: [Synth 8-567] referenced signal 'rs' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+WARNING: [Synth 8-567] referenced signal 'rt' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+WARNING: [Synth 8-567] referenced signal 'aluout' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+WARNING: [Synth 8-567] referenced signal 'state' should be on the sensitivity list [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:86]
+INFO: [Synth 8-256] done synthesizing module 'Basys3' (15#1) [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/Basys3.v:1]
+WARNING: [Synth 8-3331] design cut has unconnected port clk
+WARNING: [Synth 8-3331] design cut has unconnected port reset
+WARNING: [Synth 8-3331] design pcadd has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 468.551 ; gain = 178.668
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 468.551 ; gain = 178.668
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/constrs_1/new/Basys3_Master.xdc]
+WARNING: [Vivado 12-507] No nets matched 'Button_IBUF'. [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/constrs_1/new/Basys3_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/constrs_1/new/Basys3_Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 805.371 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 805.371 ; gain = 515.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 805.371 ; gain = 515.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 805.371 ; gain = 515.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "alusrcA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dbdatasrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mWr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wrereg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "aluop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "regfile_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "key_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element cnt_reg was removed.  [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/rebounce.v:27]
+INFO: [Synth 8-802] inferred FSM for state register 'AN_reg' in module 'Basys3'
+INFO: [Synth 8-5544] ROM "AN" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'nextstate_reg' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/control.v:113]
+WARNING: [Synth 8-327] inferring latch for variable 'wrereg_reg' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/control.v:187]
+WARNING: [Synth 8-327] inferring latch for variable 'regdst_reg' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/control.v:186]
+WARNING: [Synth 8-327] inferring latch for variable 'aluop_reg' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/control.v:251]
+WARNING: [Synth 8-327] inferring latch for variable 'instruction_reg' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/insmem.v:37]
+WARNING: [Synth 8-327] inferring latch for variable 'writereg_reg' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/registerfile.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'dataout_reg' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:47]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[127]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[126]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[125]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[124]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[123]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[122]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[121]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[120]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[119]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[118]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[117]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[116]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[115]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[114]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[113]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[112]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[111]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[110]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[109]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[108]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[107]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[106]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[105]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[104]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[103]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[102]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[101]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[100]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[99]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[98]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[97]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[96]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[95]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[94]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[93]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[92]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[91]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[90]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[89]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[88]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[87]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[86]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[85]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[84]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[83]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[82]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[81]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[80]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[79]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[78]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[77]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[76]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[75]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[74]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[73]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[72]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[71]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[70]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[69]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[68]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[67]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[66]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[65]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[64]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[63]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[62]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[61]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[60]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[59]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[58]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[57]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[56]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[55]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[54]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[53]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[52]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[51]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[50]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[49]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[48]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[47]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[46]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[45]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[44]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[43]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[42]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[41]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[40]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[39]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[38]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[37]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[36]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'datamemory_reg[35]' [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v:57]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                            00001 |                             0000
+                 iSTATE2 |                            00010 |                             0111
+                  iSTATE |                            00100 |                             1110
+                 iSTATE0 |                            01000 |                             1101
+                 iSTATE1 |                            10000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'AN_reg' using encoding 'one-hot' in module 'Basys3'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 805.371 ; gain = 515.488
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |datamem__GB0  |           1|     48528|
+|2     |datamem__GB1  |           1|     14666|
+|3     |datamem__GB2  |           1|     18434|
+|4     |datamem__GB3  |           1|     23899|
+|5     |datamem__GB4  |           1|     29764|
+|6     |datamem__GB5  |           1|     36889|
+|7     |datamem__GB6  |           1|     45985|
+|8     |multicpu__GC0 |           1|     18743|
+|9     |Basys3__GC0   |           1|       681|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               17 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 132   
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 126   
+	   4 Input      8 Bit        Muxes := 72    
+	  17 Input      7 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  21 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 8     
+	   2 Input      2 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 198   
+	   5 Input      1 Bit        Muxes := 98    
+	   4 Input      1 Bit        Muxes := 33    
+	   7 Input      1 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Basys3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+Module datamem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 126   
+	   4 Input      8 Bit        Muxes := 72    
+	   4 Input      2 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 125   
+	   5 Input      1 Bit        Muxes := 96    
+	   4 Input      1 Bit        Muxes := 32    
+Module control 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  21 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 6     
+	   7 Input      1 Bit        Muxes := 1     
+	  21 Input      1 Bit        Muxes := 1     
+Module pcadd 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module insmem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
+Module IR 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module signzeroextend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module registerfile 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 128   
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 64    
+	   4 Input      1 Bit        Muxes := 1     
+Module toreg__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module toreg__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module toreg__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module toreg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module rebounce 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module SegLED 
+Detailed RTL Component Info : 
++---Muxes : 
+	  17 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "reb/key_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element reb/cnt_reg was removed.  [D:/Vivado project/19335016__/MutiCpu/MutiCpu.srcs/sources_1/new/rebounce.v:27]
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "regfile_reg[0]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[1]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[2]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[3]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[4]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[5]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[6]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[7]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[8]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[9]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[10]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[11]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[12]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[13]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[14]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[15]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[16]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[17]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[18]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[19]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[20]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[21]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[22]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[23]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[24]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[25]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[26]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[27]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[28]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[29]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[30]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "regfile_reg[31]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "alu/zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[5]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[6]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[7]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[8]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[9]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[10]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[11]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[12]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[13]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[14]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[15]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[16]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[17]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[18]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[19]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[20]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[21]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[22]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[23]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[24]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[25]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[26]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[27]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[28]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[29]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/writereg_reg[30]' (LD) to 'rgfile/writereg_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (rgfile/\writereg_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (writereg_reg[31]) is unused and will be removed from module registerfile.
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][0]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][1]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][2]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][3]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][4]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][5]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][6]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][7]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][8]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][9]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][10]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][11]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][12]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][13]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][14]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][15]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][16]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][17]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][18]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][19]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][20]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][21]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][22]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][23]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][24]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][25]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][26]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][27]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][28]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][29]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+INFO: [Synth 8-3886] merging instance 'rgfile/regfile_reg[0][30]' (FDE_1) to 'rgfile/regfile_reg[0][31]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:31 . Memory (MB): peak = 805.371 ; gain = 515.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|insmem      | p_0_out    | 128x8         | LUT            | 
+|insmem      | p_0_out    | 128x8         | LUT            | 
+|insmem      | p_0_out    | 128x8         | LUT            | 
+|insmem      | p_0_out    | 128x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |datamem__GB0  |           1|      8347|
+|2     |datamem__GB1  |           1|        54|
+|3     |datamem__GB2  |           1|        80|
+|4     |datamem__GB3  |           1|        88|
+|5     |datamem__GB4  |           1|       173|
+|6     |datamem__GB5  |           1|       141|
+|7     |datamem__GB6  |           1|       183|
+|8     |multicpu__GC0 |           1|      5879|
+|9     |Basys3__GC0   |           1|       282|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:40 . Memory (MB): peak = 870.891 ; gain = 581.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:40 . Memory (MB): peak = 870.922 ; gain = 581.039
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |datamem__GB6  |           1|        32|
+|2     |multicpu__GC0 |           1|      5843|
+|3     |Basys3__GC0   |           1|       282|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mcpu/rgfile/regfile_reg[0][31] )
+WARNING: [Synth 8-3332] Sequential element (mcpu/rgfile/regfile_reg[0][31]) is unused and will be removed from module Basys3.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:41 . Memory (MB): peak = 870.926 ; gain = 581.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 870.926 ; gain = 581.043
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 870.926 ; gain = 581.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 870.926 ; gain = 581.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:42 . Memory (MB): peak = 870.926 ; gain = 581.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:44 . Memory (MB): peak = 870.926 ; gain = 581.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:44 . Memory (MB): peak = 870.926 ; gain = 581.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    53|
+|3     |LUT1   |     4|
+|4     |LUT2   |   173|
+|5     |LUT3   |    92|
+|6     |LUT4   |    94|
+|7     |LUT5   |  1175|
+|8     |LUT6   |   848|
+|9     |MUXF7  |   321|
+|10    |FDCE   |    39|
+|11    |FDRE   |  1166|
+|12    |FDSE   |     5|
+|13    |LD     |    56|
+|14    |IBUF   |     6|
+|15    |OBUF   |    11|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+-------------+------+
+|      |Instance   |Module       |Cells |
++------+-----------+-------------+------+
+|1     |top        |             |  4046|
+|2     |  mcpu     |multicpu     |  3925|
+|3     |    alu    |ALU          |    12|
+|4     |    cu     |control      |   119|
+|5     |    getdb  |toreg        |    43|
+|6     |    ins    |insmem       |    32|
+|7     |    ir     |IR           |   440|
+|8     |    pc     |pc           |   131|
+|9     |    pcadd  |pcadd        |    37|
+|10    |    rgfile |registerfile |  2884|
+|11    |    writeA |toreg_0      |   118|
+|12    |    writeB |toreg_1      |    77|
+|13    |  reb      |rebounce     |    34|
++------+-----------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:44 . Memory (MB): peak = 870.926 ; gain = 581.043
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 140 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:38 . Memory (MB): peak = 870.926 ; gain = 244.223
+Synthesis Optimization Complete : Time (s): cpu = 00:01:18 ; elapsed = 00:01:45 . Memory (MB): peak = 870.926 ; gain = 581.043
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 436 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 56 instances were transformed.
+  LD => LDCE: 56 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+199 Infos, 126 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:49 . Memory (MB): peak = 870.926 ; gain = 593.676
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado project/19335016__/MutiCpu/MutiCpu.runs/synth_1/Basys3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Basys3_utilization_synth.rpt -pb Basys3_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 870.926 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 26 21:46:48 2020...

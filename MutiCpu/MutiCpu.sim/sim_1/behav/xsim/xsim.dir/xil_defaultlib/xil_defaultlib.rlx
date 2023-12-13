@@ -1,0 +1,18 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sim_1/new/sim.v,1609043191,verilog,,,,sim,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/ALU.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/IR.v,,ALU,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/IR.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/control.v,,IR,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/control.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/cut.v,,control,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/cut.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v,,cut,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/datamem.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/insmem.v,,datamem,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/insmem.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/multicpu.v,,insmem,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/multicpu.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/pc.v,,multicpu,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/pc.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/pcadd.v,,pc,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/pcadd.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/registerfile.v,,pcadd,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/registerfile.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/signzeroextend.v,,registerfile,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/signzeroextend.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/toreg.v,,signzeroextend,,,,,,,,
+D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sources_1/new/toreg.v,1609043191,verilog,,D:/Vivado project/MutiCPU/MutiCpu/MutiCpu.srcs/sim_1/new/sim.v,,toreg,,,,,,,,
